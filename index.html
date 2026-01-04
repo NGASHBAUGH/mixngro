@@ -5,33 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mix & Gro – Gro with us</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-        header { background: #f8f8f8; padding: 20px; text-align: center; border-bottom: 1px solid #ddd; }
-        nav { background: #333; padding: 10px; text-align: center; }
-        nav a { color: #fff; margin: 0 15px; text-decoration: none; }
-        main { max-width: 800px; margin: 40px auto; padding: 20px; }
-        footer { background: #333; color: #fff; text-align: center; padding: 20px; font-size: 0.9em; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #f8f8f8;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 80px;
+            scroll-margin-top: 80px; /* for smooth scrolling to section */
+        }
+        section h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 30px;
+        }
+        .contact-info {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Mix & Gro</h1>
         <p>Gro with us</p>
     </header>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="product.html">Product</a>
-        <a href="supporting-documents.html">Supporting Documents</a>
-        <a href="our-team.html">Our Team</a>
-        <a href="contact-us.html">Contact Us</a>
+        <a href="#home">Home</a>
+        <a href="#product">Product</a>
+        <a href="#supporting-documents">Supporting Documents</a>
+        <a href="#our-team">Our Team</a>
+        <a href="#contact-us">Contact Us</a>
     </nav>
+
     <main>
-        <p>Mix & Gro is a regional California leader in distributing a superior soil like plant growth substrate soil amendment input known as Spent Mushroom Substrate (SMS). SMS is derived from a unique compost blend that is specifically formulated to grow white button and crimini mushrooms.</p>
-        <p>Contact: 916-761-6882</p>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Home</h2>
+            <p>Mix & Gro is a regional California leader in distributing a superior soil like plant growth substrate soil amendment input known as Spent Mushroom Substrate (SMS). SMS is derived from a unique compost blend that is specifically formulated to grow white button and crimini mushrooms.</p>
+            <p class="contact-info">Contact: 916-761-6882</p>
+        </section>
+
+        <!-- Product Section -->
+        <section id="product">
+            <h2>Product</h2>
+            <p><strong>100% Spent Mushroom Substrate</strong></p>
+            <p>Mix and Gro, LLC entered into an exclusive Master Distributor Agreement with a CCOF and CDFA Certified Mushroom Farm in California. Our agreement allows us to private label the spent mushroom substrate that the farm generates after they clean out their mushroom growing rooms.</p>
+            <p class="contact-info">Contact: 916-761-6882</p>
+        </section>
+
+        <!-- Supporting Documents Section -->
+        <section id="supporting-documents">
+            <h2>Supporting Documents</h2>
+            <ul>
+                <li><a href="#">Safety Data Sheet (SDS)</a></li>
+                <li><a href="#">SMS - MH - Lab Analysis</a></li>
+                <li><a href="#">Product Information Packet</a></li>
+            </ul>
+            <p>(Note: These links would point to PDF files on the original site.)</p>
+            <p class="contact-info">Contact: 916-761-6882</p>
+        </section>
+
+        <!-- Our Team Section -->
+        <section id="our-team">
+            <h2>Our Team</h2>
+            <p>At Mix & Gro, our team’s expertise expands far beyond the talented colleagues in our office. Our business development model is centered on assembling a diverse group professionals and companies who all add value to our customers.</p>
+            <p>Our substrate suppliers follow rigorous standard operation procedures to ensure us that their plant grow media meets the high-quality product standards which we offer to you.</p>
+            <p>We only want to sell you what you need and not what we have. Our network of advisors helps us develop products to fit your needs. Mix & Gro works with an integral group of soil blenders that can blend our substrates with any combination of plant grow substances for your unique requirements.</p>
+            <p>Our broad relationships with trucking companies allows us flexibility to get our products to you when it’s convenient for you.</p>
+            <p class="contact-info">Contact: 916-761-6882</p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <p class="contact-info">Contact: 916-761-6882</p>
+        </section>
+
     </main>
+
     <footer>
         <p>© All rights reserved 2019</p>
         <p>Proudly powered by WordPress | Theme: Corporate Plus by Acme Themes</p>
     </footer>
+
 </body>
 </html>
